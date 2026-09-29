@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Curiosos de la Prehistoria y Dinosaurios</title>
+    <style>
+        /* Paleta de colores vibrantes y configuración base */
+        :root {
+            --bg-color: #1a1a2e;
+            --card-bg: #162447;
+            --accent-green: #00f5d4;
+            --accent-orange: #ff9f1c;
+            --accent-pink: #ff007f;
+            --text-main: #ffffff;
+            --text-muted: #b0b3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Encabezado colorido con degradado */
+        header {
+            background: linear-gradient(135deg, #ff007f, #ff9f1c);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Distribución de tarjetas */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        /* Estilo de las tarjetas de datos curiosos */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            border-left: 5px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Bordes de colores según la tarjeta */
+        .card-green { border-left-color: var(--accent-green); }
+        .card-orange { border-left-color: var(--accent-orange); }
+        .card-pink { border-left-color: var(--accent-pink); }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .card-green h3 { color: var(--accent-green); }
+        .card-orange h3 { color: var(--accent-orange); }
+        .card-pink h3 { color: var(--accent-pink); }
+
+        .card p {
+            color: #e2e8f0;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        /* Sección de Bibliografía */
+        .bibliography {
+            background-color: #0f172a;
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid #334155;
+        }
+
+        .bibliography h2 {
+            color: var(--accent-green);
+            margin-top: 0;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 10px;
+        }
+
+        .bibliography ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bibliography li {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #ff9f1c;
+        }
+
+        .bibliography li strong {
+            color: #ffffff;
+        }
+
+        .bibliography a {
+            color: var(--accent-green);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .bibliography a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pie de página y Derechos de Autor */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #0f172a;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            border-top: 2px solid #ff007f;
+            margin-top: 60px;
+        }
+
+        .copyright-title {
+            color: var(--accent-orange);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .authors-list {
+            color: #ffffff;
+            font-weight: 500;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mundo Prehistórico</h1>
+        <p>Secretos y datos asombrosos sobre la era de los dinosaurios</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Sección de Datos Curiosos en Cuadrícula -->
+        <div class="grid">
+            <div class="card card-pink">
+                <h3> ¿Agua reciclada?</h3>
+                <p>Las moléculas de agua en la Tierra se evaporan y precipitan continuamente en un ciclo cerrado. ¡El agua que bebes hoy pudo haber pasado por el organismo de un dinosaurio hace millones de años!</p>
+            </div>
+
+            <div class="card card-orange">
+                <h3> Mini gigantes</h3>
+                <p>No todos eran enormes. El <em>Microraptor</em> pesaba solo un kilo y medio y tenía plumas en sus cuatro extremidades, lo que le permitía planear fácilmente entre los árboles.</p>
+            </div>
+
+            <div class="card card-green">
+                <h3> Dinosaurios con gripe</h3>
+                <p>En 2022 se halló la primera evidencia fósil de un dinosaurio con una enfermedad respiratoria similar a la gripe, identificada por crecimientos óseos inusuales en su cuello.</p>
+            </div>
+
+            <div class="card card-green">
+                <h3> El origen del nombre</h3>
+                <p>El término científico <em>Dinosauria</em> fue inventado en 1842 por Sir Richard Owen. Proviene del griego y se traduce literalmente como <strong>"lagartos terriblemente grandes"</strong>.</p>
+            </div>
+
+            <div class="card card-pink">
+                <h3> Manadas mixtas</h3>
+                <p>Fósiles recientes indican que diferentes especies de dinosaurios herbívoros caminaban juntos de forma organizada para protegerse mutuamente de los depredadores.</p>
+            </div>
+
+            <div class="card card-orange">
+                <h3> Dinosaurios vivos</h3>
+                <p>Científicamente, las aves actuales no solo evolucionaron de ellos, sino que comparten un ancestro directo con los dinosaurios no avianos, perteneciendo a su mismo grupo biológico.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Citas Bibliográficas -->
+        <div class="bibliography">
+            <h2> Fuentes y Citas Bibliográficas</h2>
+            <ul>
+                <li>
+                    <strong>American Museum of Natural History</strong><br>
+                    American Museum of Natural History. (s.f.). <em>Dinosaur Facts</em>. 
+                    <br><a href="https://amnh.org" target="_blank">Visitar fuente oficial</a>
+                </li>
+                <li>
+                    <strong>National Geographic (Ciencia y Familia)</strong><br>
+                    National Geographic. (2022). <em>10 dinosaur facts that will blow your kid's mind</em>.
+                    <br><a href="https://nationalgeographic.com" target="_blank">Visitar fuente oficial</a>
+                </li>
+                <li>
+                    <strong>Natural History Museum, London</strong><br>
+                    Natural History Museum. (s.f.). <em>What are dinosaurs?</em>.
+                    <br><a href="https://nhm.ac.uk" target="_blank">Visitar fuente oficial</a>
+                </li>
+                <li>
+                    <strong>National Geographic Science</strong><br>
+                    National Geographic. (2025). <em>Different dinosaur species may have really traveled together</em>.
+                    <br><a href="https://nationalgeographic.com" target="_blank">Visitar fuente oficial</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Pie de página con Derechos de Autor actualizados -->
+    <footer>
+        <div class="copyright-title">© 2026 Todos los derechos reservados</div>
+        <p class="authors-list">
+            Carlos Enrique Mundo Meléndez | Josias Rogel Antonio Alvarenga | Angelly Merary Cerna Casco
+        </p>
+        <p style="font-size: 0.85rem; margin-top: 10px;">Mundo Prehistórico - Citas verificadas de museos y revistas científicas.</p>
+    </footer>
+
+</body>
+</html>
